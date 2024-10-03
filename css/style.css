@@ -511,6 +511,76 @@ color: #fff;
   background-color: #31d0aa;
 }
 
+.input-footer{
+  margin-left: 80px;
+}
+
+.peska-footer{
+  font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+margin-bottom: 16px;
+}
+
+.footer-foorm-flex{
+  display: flex;
+  gap: 24px;
+}
+
+.footer-input{
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #ffffff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+background: #2e2f42;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+padding-left: 16px;
+
+font-size: 12px;
+line-height: 2;
+letter-spacing: 0.04em;
+}
+
+.footer-input::placeholder{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.btb-footer-input{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
+
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+
+  background: #4d5ae5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.svg-footer-input{
+  margin-left: 16px;
+}
+
 /*====================FOOTER=====================*/
 /*====================MODALKA=====================*/
 .backdrop{
@@ -546,6 +616,7 @@ top: 50%;
 left: 50%;
 transform: translate(-50%,-50% );
 padding: 72px 24px 24px ;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn{
@@ -554,17 +625,21 @@ padding: 72px 24px 24px ;
   padding: 0;
   width: 24px;
   height: 24px;
-  border-radius: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 24px;
   right: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus{
   background-color: #404bbf;
+  border: none;
   fill: #fff;
 }
 
@@ -605,10 +680,12 @@ display: inline-block;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 38px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
@@ -643,7 +720,8 @@ display: inline-block;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
-padding-left: 8px 16px;
+
+padding: 8px 16px;
 resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 outline: transparent;
@@ -677,7 +755,7 @@ margin-bottom: 24px;
 font-family: "Roboto", sans-serif;
 font-weight: 400;
 font-size: 12px;
-line-height: 1.16667;
+line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
 
@@ -693,6 +771,7 @@ color: #8e8f99;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
  fill: transparent;
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-privat{}
@@ -706,7 +785,9 @@ color: #4d5ae5;
 
 .modal-input-chek:checked+.label-four-input-chek .span-chek{
 background-color: #404bbf;
-fill: #fff;
+
+fill: #F4F4FD;
+border: none;
 
 }
 
@@ -734,8 +815,9 @@ background: #4d5ae5;
 
 border-radius: 4px;
 padding: 16px 32px;
-width: 169px;
+min-width: 169px;
 height: 56px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*====================MODALKA=====================*/
