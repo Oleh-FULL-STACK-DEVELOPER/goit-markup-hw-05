@@ -633,8 +633,10 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   top: 24px;
   right: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .close-btn:hover,
 .close-btn:focus{
@@ -666,7 +668,7 @@ line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
 margin-bottom: 4px;
-display: inline-block;
+display: block;
 }
 
 
@@ -685,6 +687,7 @@ display: inline-block;
   padding-bottom: 8px;
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
@@ -785,19 +788,13 @@ color: #4d5ae5;
 
 .modal-input-chek:checked+.label-four-input-chek .span-chek{
 background-color: #404bbf;
-
-fill: #F4F4FD;
 border: none;
-
+fill: #F4F4FD;
 }
 
-.modal-input-chek:hover+.label-four-input-chek .span-chek,
-.modal-input-chek:focus+.label-four-input-chek .span-chek{
-  border: 1px solid rgba(5, 17, 243, 0.4);
-}
+
 
 .send-btn{
-
 margin-left: auto;
 margin-right: auto;
 display: block;
