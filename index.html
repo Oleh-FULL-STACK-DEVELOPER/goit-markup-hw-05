@@ -462,5 +462,103 @@
       </div>
     </footer>
     <!--================FOOTER==================-->
+    <!--================MODALKA==================-->
+    <div class="backdrop  is-open">
+      <div class="modal">
+        <button class="close-btn">
+          <svg class="icon-btb-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-p">Leave your contacts and we will call you back</p>
+        <form class="form">
+          <div class="div-four-input">
+            <label class="label-four-input"for="user-name">Name</label>
+            <div class="div-four-icon-center">
+              <input 
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+              title="oleh"
+              pattern="[a-z]{4,8}"
+              >
+              
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="div-four-input">
+            <label class="label-four-input" for="input-number">Phone</label>
+            <div class="div-four-icon-center">
+              <input 
+              class="modal-input" 
+              type="tel" 
+              name="input-number" 
+              id="input-number"
+              required
+              title="xxx-xxx-xx-xx"
+              pattern="{1,0}"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="div-four-input">
+            <label class="label-four-input" for="input-email">Email</label>
+            <div class="div-four-icon-center">
+              <input 
+              class="modal-input" 
+              type="email" 
+              name="input-email" 
+              id="input-email"
+              required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail-sms"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="div-four-input-texteria">
+            <label class="label-four-input" for="user-comment">Comment</label>
+            <textarea  
+            class="modal-textarea"   
+            name="user-comment" 
+            id="user-comment" 
+            placeholder="Text input"
+            required></textarea>
+          </div>
+
+          <div class="div-four-input-chek">
+            <input 
+            class="modal-input-chek visually-hidden " 
+            type="checkbox" 
+            name="user-privacy" 
+            id="user-privacy"
+            value="true"
+            required 
+            />
+            <label class="label-four-input-chek" for="user-privacy">
+              <span class="span-chek">
+                <svg class="svg-privat" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector-chek"></use>
+                </svg>
+              </span> I accept the terms and conditions of the 
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="send-btn" type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+    <!--================MODALKA==================-->
   </body>
 </html>
